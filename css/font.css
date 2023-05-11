@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    src: url(/font/NEXON_Lv2_Gothic_total/A_NEXON_Lv2_Gothic/NEXON\ Lv2\ Gothic.ttf);
+}
+@font-face {
+    font-family: "NEXNON Lv2 Gothic bold";
+    src: url(/font/NEXON_Lv2_Gothic_total/A_NEXON_Lv2_Gothic/NEXON\ Lv2\ Gothic\ Bold.ttf);
+}
+@font-face {
+    font-family: "NEXON Lv2 Gothic Regular";
+    src: url(/font/NEXON_Lv2_Gothic_total/A_NEXON_Lv2_Gothic/NEXON\ Lv2\ Gothic\ Medium.ttf);
+}
+@font-face {
+    font-family: "NEXON Lv2 Gothic Light";
+    src: url(/font/NEXON_Lv2_Gothic_total/A_NEXON_Lv2_Gothic/NEXON\ Lv2\ Gothic\ Light.ttf);
+}

@@ -1,0 +1,110 @@
+/* 상단종합 */
+.header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  padding: 0 70px;
+  overflow: hidden;
+  transition: height 0.5s, padding 0.5s;
+}
+
+.header-active {
+  height: 350px !important;
+  background: #656565;
+}
+
+/* //상단종합 */
+
+/* 상단로고 */
+.header-logo {
+  position: absolute;
+  top: 12px;
+}
+/* //상단로고 */
+
+/* 상단메뉴 */
+.header-nav {
+  left: 33%;
+  position: absolute;
+  width: 625px;
+  height: 70px;
+  text-align: center;
+}
+.nav-gnb {
+  display: flex;
+  justify-content: center;
+}
+.nav-gnb > li {
+  position: relative;
+  margin-left: 75px;
+}
+.nav-gnb > li:first-child {
+  margin: 0;
+}
+.nav-gnb > li > a {
+  text-align: center;
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-size: 21px;
+  line-height: 70px;
+  font-weight: 400;
+  color: #222222;
+}
+.gnb-submenu {
+  position: absolute;
+  text-align: left;
+  line-height: 35px;
+  color: #222222;
+  height: 300px;
+}
+.gnb-submenu li {
+  width: 100px;
+}
+/* //상단메뉴 */
+
+/* 상단블로그 */
+.header-blog {
+  left: 88%;
+  position: absolute;
+  top: 22px;
+}
+/* //상단블로그 */
+
+/* 상단번역기 */
+.header-translate {
+  background: #222222;
+  padding: 5px 12px;
+  top: 21px;
+  left: 91%;
+  position: absolute;
+  display: flex;
+  border: 0;
+  border-radius: 20px;
+}
+
+.header-translate a {
+  color: #ffffff;
+  font-size: 12px;
+  position: relative;
+}
+.header-translate a:first-child {
+  padding-right: 10px;
+}
+.header-translate a:last-child {
+  padding-left: 10px;
+  opacity: 0.3;
+}
+.header-translate a:first-child::after {
+  position: absolute;
+  content: "";
+  flex-grow: 1;
+  transform: translateY(-50%);
+  background: #656565;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  font-size: 0px;
+  line-height: 0px;
+}
+/* //상단번역기 */
