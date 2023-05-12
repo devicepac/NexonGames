@@ -1,0 +1,12 @@
+.introduce {
+    padding: 250px 0 380px;
+    background-image: url(/images/background.introduce.jpg);
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.introduce h2 {
+    font-family: "NEXNON Lv2 Gothic bold";
+    font-size: 65px;
+    font-weight: 700;
+}

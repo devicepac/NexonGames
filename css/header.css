@@ -6,14 +6,26 @@
   align-items: center;
   padding: 0 70px;
   overflow: hidden;
-  transition: height 0.5s, padding 0.5s;
+  background: #fff;
+  transition: height 0.4s;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-
 .header-active {
-  height: 350px !important;
-  background: #656565;
+  height: 370px !important;
 }
-
+.background {
+  background: #f8f8f8;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 70px;
+  left: 0;
+  right: 0;
+}
 /* //상단종합 */
 
 /* 상단로고 */
@@ -56,6 +68,7 @@
   line-height: 35px;
   color: #222222;
   height: 300px;
+  margin-top: 10px;
 }
 .gnb-submenu li {
   width: 100px;
@@ -93,6 +106,9 @@
 .header-translate a:last-child {
   padding-left: 10px;
   opacity: 0.3;
+}
+.header-translate a:hover {
+  opacity: 0.8;
 }
 .header-translate a:first-child::after {
   position: absolute;

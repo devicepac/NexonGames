@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
     <!-- favicon -->
     <link
       rel="apple-touch-icon"
@@ -49,9 +52,10 @@
     <script src="/js/prefixfree.min.js"></script>
     <!-- response -->
     <script src="/js/respond.min.js"></script>
-    <script src="/js/header.js"></script>
+    <script src="/js/index.js"></script>
+    <!-- swiper 스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
-    
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -62,6 +66,7 @@
         <a href="#" class="header-logo">
           <img src="/images/main_logo.png" alt="메인 로고 이미지" />
         </a>
+        <div class="background"></div>
         <!-- //상단로고 -->
         <!-- 상단메뉴 -->
         <nav class="header-nav">
@@ -128,18 +133,97 @@
       <!-- //상단 -->
 
       <!-- 슬라이드 -->
-      <section class="game-slide"></section>
+      <section class="game-slide">
+        <!-- promotion Swiper -->
+        <div class="swiper-container sw-game">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video muted autoplay loop>
+                <source src="/images/slide-video/Hit2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted autoplay loop>
+                <source
+                  src="/images/slide-video/ProjectD.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted autoplay loop>
+                <source
+                  src="/images/slide-video/BlueArchive.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <video muted autoplay loop>
+                <source
+                  src="/images/slide-video/ProjectMagnum.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- //슬라이드 -->
-
       <!-- 사이트소개 -->
       <section class="site-banner">
-        <div class="container"></div>
+        <div class="container">
+          <div class="banner-title">
+            <h4>We Make Games Better</h4>
+            <h2>NEXON GAMES</h2>
+            <span class="bar"></span>
+          </div>
+          <img class="banner-iamge" src="/images/banner.png" alt="배너이미지" />
+          <div class="banner-intro">
+            <p>
+              우리는 더 좋은 게임(Better Game)을<br />만들고 세상에 보여주기
+              위해 모였습니다.
+            </p>
+            <p>
+              유저가 더 즐겁게 게임을 즐길 수 있도록,<br />세상보다 먼저 한
+              발자국 더 나아갑니다.
+            </p>
+            <p>넥슨게임즈의 방식으로<br />더 좋은 게임을 만듭니다.</p>
+          </div>
+        </div>
       </section>
       <!-- //사이트소개 -->
 
       <!-- 인물소개 -->
       <section class="introduce">
-        <div class="container"></div>
+        <div class="container">
+          <h2>Who we are</h2>
+          <div class="swiper-container sw-introduce">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/yoon.png" alt="인물사진" />
+                <span>Interviewee.</span>
+                <h2>
+                  윤진홍 님
+                  <span>
+                    아트실 캐릭터팀
+                  </span>
+                </h2>
+                <h3>“제안하고 논의하며 성장합니다.”</h3>
+                <p>
+                  우리는 같은 장르, 전형적인 툴로 게임을 만들지 않아요.<br />
+                  타 장르의 재미요소와 게임 외 재미들을 융합해 새로운 재미를 만듭니다.<br />
+                  제 아이디어가 개발로 이어지기도, 이어지지 않기도 하지만,<br />
+                  뛰어난 동료들과 함께 논의하는 과정에서 매일 한 걸음씩 더 성장함을 느껴요.<br />
+                </p>
+              </div>
+              <div class="swiper-slide">
+              </div>
+              <div class="swiper-slide">
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- //인물소개 -->
 

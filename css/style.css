@@ -2,10 +2,10 @@
 @import url(/css/font.css);
 @import url(/css/layout.css);
 @import url(/css/header.css);
-@import url();
-@import url();
-@import url();
-@import url();
+@import url(/css/gameslide.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.1/swiper-bundle.css);
+@import url(/css/site-banner.css);
+@import url(/css/introduce.css);
 @import url();
 @import url();
 @import url();
