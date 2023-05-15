@@ -42,6 +42,7 @@
 .banner-intro {
     padding-top: 280px;
     width: 520px;
+    text-align: left;
 }
 .banner-intro p {
     font-family: "NEXON Lv2 Gothic Light";

@@ -7,14 +7,51 @@
   left: 0;
 }
 .sw-game {
-    height: 100%;
+  height: 100%;
 }
 .swiper-slide {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.game-slide-down {
+  width: 1280px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 89px;
+  bottom: 50px;
+  position: absolute;
+  z-index: 99;
+  text-align: right;
+}
+.sw-bt {
+  width: 100%;
+  text-align: right;
+}
+.game-slide-down button {
+  background: none;
+  border: none;
+}
+.sw-bar {
+  width: 100%;
+  height: 3px;
+  background: white;
+  margin: 35px 0 0;
+}
+.sw-number {
+  font-family: "NEXON Lv2 Gothic Light";
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  margin: 10px 0 0;
+}
+.sw-number span {
+  font-family: "NEXON Lv2 Gothic Light";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
 }

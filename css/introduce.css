@@ -5,8 +5,121 @@
     background-position: left center;
     background-repeat: no-repeat;
 }
+.sw-introduce {
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+}
+.intro-slide-down {
+    position: absolute;
+    top: 92%;
+    right: 3%;
+    z-index: 99;
+}
+.swiper-slide {
+    padding: 0 0 15px;
+}
+.introduce-slide {
+    display: flex;
+    justify-content: center;
+    height: 429px;
+    gap: 0px 100px;
+    align-items: center;
+}
+
+.intro-slide-down {
+    position: absolute;
+}
 .introduce h2 {
     font-family: "NEXNON Lv2 Gothic bold";
     font-size: 65px;
     font-weight: 700;
+    padding: 0 0 10px;
+    text-align: left;
+}
+.swiper-slide img{
+    width: 294.39px;
+    height: 331.01px;
+}
+.introduce-right {
+    width: 53%;
+    text-align: left;
+}
+.intro-interview {
+    font-family: "NEXNON Lv2 Gothic bold";
+    font-weight: 400;
+    height: 45px;
+    font-size: 18px;
+    color: #cad401;
+    padding: 0 0 25px;
+    display: block;
+}
+.introduce-right h2 {
+    font-family: "NEXNON Lv2 Gothic bold";
+    font-weight: 700;
+    font-size: 45px;
+    padding: 0 0 65px;
+    display: block;
+    height: 116px;
+}
+.intro-team {
+    font-family: "NEXNON Lv2 Gothic";
+    font-weight: 400;
+    font-size: 18px;
+    color: #999999;
+}
+.introduce-right h3 {
+    font-family: "NEXNON Lv2 Gothic bold";
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    margin: 0 0 20px;
+    padding: 0;
+    width: fit-content;
+    position: relative;
+}
+.introduce-right h3::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    height: 50%;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.1);
+    left: 2.5%;
+}
+.introduce-right p {
+    font-family: "NEXON Lv2 Gothic Light";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #222222;
+    padding: 0 0 0 18px;
+}
+.sw-bt2 {
+    color: #222222;
+    font-family: "NEXNON Lv2 Gothic bold";
+    font-size: 20px;
+    border: none;
+    background: none;
+    display: inline-block;
+}
+.sw-prev, .sw-next {
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.sw-prev:hover {
+    transform: translateX(-10px);
+}
+
+.sw-next:hover {
+    transform: translateX(10px);
+}
+.sw-wall{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 15px;
+    background: #ddd;
 }
