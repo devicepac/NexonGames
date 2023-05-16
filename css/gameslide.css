@@ -32,16 +32,22 @@ video {
 .sw-bt {
   width: 100%;
   text-align: right;
+  transition: opacity 0.3s ease;
+}
+.bt-next:hover {
+  opacity: 0.5;
 }
 .game-slide-down button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 .sw-bar {
   width: 100%;
   height: 3px;
-  background: white;
+  background: rgba(255, 255, 255, 0.4);;
   margin: 35px 0 0;
+  display: block;
 }
 .sw-number {
   font-family: "NEXON Lv2 Gothic Light";
@@ -50,8 +56,12 @@ video {
   color: #ffffff;
   margin: 10px 0 0;
 }
+.swiper-o-number {
+  display: inline-block;
+}
 .sw-number span {
   font-family: "NEXON Lv2 Gothic Light";
   font-weight: 400;
   color: rgba(255, 255, 255, 0.4);
+  display: inline-block;
 }

@@ -16,7 +16,17 @@ window.onload = function () {
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".game-slide .sw-next",
+      nextEl: ".game-slide .bt-next",
+    },
+    pagination: {
+      el: '.sw-number',
+      type: 'custom',
+      clickable: true,
+      renderCustom: function (swiper, current, total) {
+        let currentIndex = ('0' + current).slice(-2);
+        let totalSlides = ('0' + total).slice(-2);
+        return '<div class="swiper-o-number">' + currentIndex + '</div><span>&nbsp;/&nbsp;</span><span>' + totalSlides + '</span>';
+      },
     },
   });
   let mySwiper2 = new Swiper(".sw-introduce", {

@@ -1,0 +1,64 @@
+.careers {
+  padding: 0 0 125px;
+}
+.careers > .container {
+  height: 760px;
+}
+.careers-header {
+  position: relative;
+  padding: 0 0 80px;
+  height: auto;
+}
+
+.careers-header h2 {
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-weight: 700;
+  font-size: 65px;
+  text-align: left;
+  display: block;
+  line-height: 1;
+  margin: 0;
+}
+
+.support {
+  position: absolute;
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-weight: 400;
+  font-size: 24px;
+  bottom: 80px;
+  right: 0;
+  z-index: 99;
+  transition: transform 0.2s ease;
+}
+
+.support::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  height: 31%;
+  width: 72%;
+  background: rgba(0, 123, 255, 0.3);
+}
+.support:hover {
+  transform: translateX(10px);
+}
+.careers-detail {
+  position: relative;
+}
+.careers-detail img {
+  left: 0;
+  width: 100%;
+}
+.careers-text {
+  position: absolute;
+  padding: 50px 65px 0 0;
+  text-align: left;
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  background: #ffffff;
+  left: 0;
+  bottom: -20%;
+}
