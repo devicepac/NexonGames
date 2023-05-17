@@ -1,6 +1,10 @@
 /* 상단종합 */
 .header {
   position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 70px;
   align-items: center;
@@ -9,22 +13,18 @@
   background: #fff;
   transition: height 0.4s;
   z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 .header-active {
   height: 370px !important;
 }
 .background {
-  background: #f8f8f8;
   position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+  background: #f8f8f8;
   width: 100%;
   height: 300px;
-  top: 70px;
-  left: 0;
-  right: 0;
 }
 /* //상단종합 */
 
@@ -37,8 +37,8 @@
 
 /* 상단메뉴 */
 .header-nav {
-  left: 33%;
   position: absolute;
+  left: 33%;
   width: 625px;
   height: 70px;
   text-align: center;
@@ -77,28 +77,28 @@
 
 /* 상단블로그 */
 .header-blog {
-  left: 88%;
   position: absolute;
   top: 22px;
+  left: 88%;
 }
 /* //상단블로그 */
 
 /* 상단번역기 */
 .header-translate {
-  background: #222222;
-  padding: 5px 12px;
+  display: flex;
+  position: absolute;
   top: 21px;
   left: 91%;
-  position: absolute;
-  display: flex;
+  background: #222222;
+  padding: 5px 12px;
   border: 0;
   border-radius: 20px;
 }
 
 .header-translate a {
+  position: relative;
   color: #ffffff;
   font-size: 12px;
-  position: relative;
 }
 .header-translate a:first-child {
   padding-right: 10px;
@@ -112,12 +112,12 @@
 }
 .header-translate a:first-child::after {
   position: absolute;
+  top: 50%;
+  right: 0;
   content: "";
   flex-grow: 1;
   transform: translateY(-50%);
   background: #656565;
-  top: 50%;
-  right: 0;
   width: 1px;
   height: 10px;
   font-size: 0px;

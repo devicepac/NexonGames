@@ -1,0 +1,20 @@
+.fix-banner {
+  position: fixed;
+  right: 30px;
+  bottom: 100px;
+  z-index: 9999;
+  text-align: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  border: none;
+  background: #191b1d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 46px;
+  font-family: "NEXON Lv2 Gothic" sans-serif;
+}
+.fix-banner:hover {
+    background: #007aff;
+}

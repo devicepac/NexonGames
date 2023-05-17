@@ -1,90 +1,125 @@
 .footer {
-    background: #f3f3f3;
+  background: #f3f3f3;
 }
 .footer > hr {
-    background: rgba(0, 0, 0, 0.1);
-    height: 1px;
-    border: 0;
+  background: rgba(0, 0, 0, 0.1);
+  height: 1px;
+  border: 0;
 }
 .footer-up {
-    padding: 50px 0;
-    display: flex;
+  display: flex;
+  padding: 50px 0;
 }
 .footer-up-left {
-    width: 50%;
-    text-align: left;
-    height: 251.19px;
+  width: 50%;
+  text-align: left;
+  height: 251.19px;
 }
 .footer-logo {
-    margin: 0 0 30px;
+  margin: 0 0 30px;
 }
 .footer-up-left p {
-    font-family: "NEXON Lv2 Gothic Light";
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 21px;
-    color: #999999;
-    margin: 0 0 15px;
+  font-family: "NEXON Lv2 Gothic Light";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #999999;
+  margin: 0 0 15px;
 }
 .footer-up-right {
-    width: 50%;
-    text-align: left;
+  width: 50%;
+  text-align: left;
 }
 .footer-up-right-menu {
-    display: flex;
+  display: flex;
 }
 .footer-up-right-menu > li {
-    margin: 0 65px 0 0;
-    display: block;
+  display: block;
+  margin: 0 65px 0 0;
 }
 .footer-up-right-menu > li > a {
-    margin: 0 0 15px;
-    display: inline-block;
+  display: inline-block;
+  margin: 0 0 15px;
 }
 .footer-submenu > li {
-    margin: 0 0 3px;
-    display: block;
+  display: block;
+  margin: 0 0 3px;
 }
 .footer-submenu > li > a {
-    color: #999999;
-    font-size: 14px;
-    white-space: nowrap;
-    transition: color 0.2s;
+  color: #999999;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: color 0.2s;
 }
 .footer-submenu > li > a:hover {
-    color: #222222;
+  color: #222222;
 }
 .footer-down {
-    padding: 30px 0;
-    display: flex;
-    margin: 0 auto;
-    width: 1280px;
+  display: flex;
+  position: relative;
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 1280px;
 }
 .footer-down p {
-    text-align: left;
-    font-family: "NEXON Lv2 Gothic Light";
-    font-weight: 400;
-    font-size: 14px;
-    color: #999999;
+  text-align: left;
+  font-family: "NEXON Lv2 Gothic Light";
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
 }
-.footer-down button {
-    border: none;
-    margin-left: auto;
-    background: none;
-    width: 220px;
-    text-align: left;
-    position: relative;
-    font-size: 14px;
-    color: #999999;
+.family-site {
+  font-family: "NEXON Lv2 Gothic";
+  border: none;
+  margin-left: auto;
+  background: none;
+  width: 220px;
+  text-align: left;
+  font-size: 14px;
+  color: #999999;
+  z-index: 1;
 }
-.footer-down button::after {
-    content: '▲';
+.family-site::before {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  content: ""; 
+  width: 220px; 
+  height: 20px; 
+  background-color: transparent;
+}
+.family-site::after {
+  position: absolute;
+  right: 0;
+  content: "▲";
+}
+.family-site:hover {
+  cursor: pointer;
+}
+.footer-down-submenu {
+    display: none;
     position: absolute;
     right: 0;
+    bottom: 80%;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    width: 220px;
 }
-.footer-down button:hover {
-    cursor: pointer;
+.footer-down-submenu li {
+    width: 220px;
+    height: 37px;
 }
-.footer-down-menu {
-    display: none;
+.footer-down-submenu > li:hover {
+  background: #ddd;
+}
+.footer-down-submenu > li > a {
+  display: block;
+  font-size: 12px;
+  color: #000000;
+  padding: 12px 16px;
+}
+.family-site:hover .footer-down-submenu {
+    display: block;
 }

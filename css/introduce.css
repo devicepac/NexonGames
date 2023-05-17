@@ -46,20 +46,20 @@
     text-align: left;
 }
 .intro-interview {
+    display: block;
     font-family: "NEXNON Lv2 Gothic bold";
     font-weight: 400;
     height: 45px;
     font-size: 18px;
     color: #cad401;
     padding: 0 0 25px;
-    display: block;
 }
 .introduce-right h2 {
+    display: block;
     font-family: "NEXNON Lv2 Gothic bold";
     font-weight: 700;
     font-size: 45px;
     padding: 0 0 65px;
-    display: block;
     height: 116px;
 }
 .intro-team {
@@ -69,6 +69,7 @@
     color: #999999;
 }
 .introduce-right h3 {
+    position: relative;
     font-family: "NEXNON Lv2 Gothic bold";
     font-weight: 700;
     font-size: 33px;
@@ -76,17 +77,16 @@
     margin: 0 0 20px;
     padding: 0;
     width: fit-content;
-    position: relative;
 }
 .introduce-right h3::after {
-    content: "";
     position: absolute;
-    left: 0px;
     bottom: -2px;
+    left: 0px;
+    left: 2.5%;
+    content: "";
     height: 50%;
     width: 95%;
     background: rgba(0, 0, 0, 0.1);
-    left: 2.5%;
 }
 .introduce-right p {
     font-family: "NEXON Lv2 Gothic Light";
@@ -97,12 +97,12 @@
     padding: 0 0 0 18px;
 }
 .sw-bt2 {
+    display: inline-block;
     color: #222222;
     font-family: "NEXNON Lv2 Gothic bold";
     font-size: 20px;
     border: none;
     background: none;
-    display: inline-block;
 }
 .sw-prev, .sw-next {
     position: relative;
