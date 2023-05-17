@@ -9,7 +9,10 @@ window.onload = function () {
       behavior: "smooth",
     });
   });
-  
+
+  // 모바일 버튼 기능
+
+  // 헤더 메뉴
   let header = document.querySelector(".header");
   let nav = document.querySelector(".header-nav");
   nav.addEventListener("mouseenter", function () {

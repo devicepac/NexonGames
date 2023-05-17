@@ -40,7 +40,6 @@
 .more:hover {
     transform: translateX(10px);
 }
-.news-menu {}
 .news-gnb {
     display: flex;
     text-align: left;
@@ -96,5 +95,3 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
-.news-gnb {}
-.news-gnb {}

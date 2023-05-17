@@ -16,5 +16,6 @@
   font-family: "NEXON Lv2 Gothic" sans-serif;
 }
 .fix-banner:hover {
-    background: #007aff;
+  background: #007aff;
+  cursor: pointer;
 }
