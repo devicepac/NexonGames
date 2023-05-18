@@ -54,23 +54,84 @@
     <script src="/js/respond.min.js"></script>
     <script src="/js/index.js"></script>
     <!-- swiper 스크립트 -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
-      <div class="mb-menu">
-        <div class="mb-close-bt"></div>
-        <nav class="mb-gnb">
-          TEXT
+      <!-- 반응형 메뉴 아이콘 -->
+      <div class="header-hidden-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- //반응형 메뉴 아이콘 -->
+      <!-- 반응형 메뉴 -->
+      <div class="mobile-menu">
+        <div class="mobile-bt">
+          <div class="mobile-translate">
+            <a href="#">KOR</a>
+            <a href="#">ENG</a>
+          </div>
+          <img class="mobile-close-bt" src="/images/close2.png" alt="닫기" />
+        </div>
+        <nav class="mobile-nav">
+          <ul class="mobile-gnb">
+            <li>
+              <a href="#">넥슨게임즈</a>
+              <ul class="mobile-submenu">
+                <li><a href="#">넥슨게임즈</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">게임</a>
+              <ul class="mobile-submenu">
+                <li><a href="#">V4</a></li>
+                <li><a href="#">서든어택</a></li>
+                <li><a href="#">블루 아카이브</a></li>
+                <li><a href="#">히트2</a></li>
+                <li><a href="#">베일드 엑스퍼트</a></li>
+                <li><a href="#">퍼스트 디센던트</a></li>
+                <li><a href="#">갓썸</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인재채용</a>
+              <ul class="mobile-submenu">
+                <li><a href="#">기업문화</a></li>
+                <li><a href="#">피플&컬쳐</a></li>
+                <li><a href="#">복지</a></li>
+                <li><a href="#">채용</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">투자정보</a>
+              <ul class="mobile-submenu">
+                <li><a href="#">기업지배구조</a></li>
+                <li><a href="#">주가정보</a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">공시/공고</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">미디어</a>
+              <ul class="mobile-submenu">
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">멀티미디어</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
+      <!-- //반응형 메뉴 -->
+      <!-- fix-menu -->
       <button class="fix-banner">TOP</button>
       <!-- 상단 -->
       <header class="header">
@@ -141,16 +202,6 @@
           <a href="#">ENG</a>
         </div>
         <!-- //상단번역기 -->
-        <!-- 반응형 메뉴 아이콘 -->
-        <div class="header-hidden-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <!-- //반응형 메뉴 아이콘 -->
-        <!-- 반응형 메뉴 -->
-
-        <!-- //반응형 메뉴 -->
       </header>
       <!-- //상단 -->
 
@@ -160,12 +211,12 @@
         <div class="swiper-container sw-game">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <video muted autoplay loop>
+              <video muted autoplay preload="auto">
                 <source src="/images/slide-video/Hit2.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="swiper-slide">
-              <video muted autoplay loop>
+              <video muted autoplay preload="auto">
                 <source
                   src="/images/slide-video/ProjectD.mp4"
                   type="video/mp4"
@@ -173,7 +224,7 @@
               </video>
             </div>
             <div class="swiper-slide">
-              <video muted autoplay loop>
+              <video muted autoplay preload="auto">
                 <source
                   src="/images/slide-video/BlueArchive.mp4"
                   type="video/mp4"
@@ -181,7 +232,7 @@
               </video>
             </div>
             <div class="swiper-slide">
-              <video muted autoplay loop>
+              <video muted autoplay preload="auto">
                 <source
                   src="/images/slide-video/ProjectMagnum.mp4"
                   type="video/mp4"
@@ -193,7 +244,9 @@
             <button class="sw-bt bt-next">
               <img src="/images/video_next_btn.png" alt="다음" />
             </button>
-            <div class="sw-bar"></div>
+            <div class="sw-bar">
+              <span class="bar"></span>
+            </div>
             <div class="sw-number"></div>
           </div>
         </div>
