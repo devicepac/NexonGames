@@ -11,15 +11,18 @@
 .banner-title {
     text-align: center;
     margin: 100px 0 0;
-    height: 277px;
+    height: auto;
+    transition: all 0.3s;
 }
 .banner-title h4 {
+    display: block;
     font-weight: 300;
     height: 103px;
     padding-bottom: 15px;
     font-size: 66px;
 }
 .banner-title h2 {
+    display: block;
     font-family: "NEXNON Lv2 Gothic bold";
     font-weight: 700;
     font-size: 66px;
@@ -36,32 +39,72 @@
 .banner-iamge {
     position: absolute;
     left: 43%;
-    width: 100%;
-    max-width: 909px;
-    height: 100%;
-    max-height: 909px;
 }
 .banner-intro {
     padding-top: 280px;
-    width: 520px;
+    width: 537.59px;
     text-align: left;
+    margin: 0;
 }
 .banner-intro p {
+    display: block;
     font-family: "NEXON Lv2 Gothic Light";
     font-size: 30px;
     font-weight: 700;
     line-height: 48px;
     padding: 0 0 50px;
+    max-height: 151px;
 }
 @media screen and (max-width: 1650px) {
     .banner-iamge {
-        max-width: 832.83px;
-        max-height: 832.83px;
+        width: 65.065%;
+        height: auto;
+        left: 42%;
     }
 }
 @media screen and (max-width: 1470px) {
     .banner-iamge {
-        max-width: 768.83px;
-        max-height: 768.83px;
+        width: 60.065%;
     }
+}
+@media screen and (max-width: 1440px) {
+    .site-banner > .container {
+        padding: 0 20px;
+    }
+    .banner-title {
+        margin-top: 200px;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .banner-intro {
+        padding-top: 17vw;
+    }
+    .banner-iamge {
+        width: 55%;
+    }
+    .banner-title h4 {
+        height: auto;
+        font-size: 5.5vw;
+        padding: 0 0 0.1vw 0;
+    }
+    .banner-title h2 {
+        height: auto;
+        font-size: 5.5vw;
+        padding: 0 0 2.5vw 0;
+    }
+    .banner-intro {
+        padding: 17vw 0 0 0;
+    }
+    .banner-intro p {
+        font-size: 2.1vw;
+        height: auto;
+        padding: 0 0 3vw 0;
+        line-height: 3vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
 }

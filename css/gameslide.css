@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   max-width: 1920px;
+  height: 100%;
   overflow: hidden;
   height: 35vw;
 }
@@ -23,7 +24,8 @@ video {
   position: absolute;
   bottom: 50px;
   left: 50%;
-  width: 1280px;
+  max-width: 1280px;
+  width: 90%;
   transform: translateX(-50%);
   height: 89px;
   z-index: 99;
@@ -70,4 +72,9 @@ video {
   font-family: "NEXON Lv2 Gothic Light";
   font-weight: 400;
   color: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 1440px) {
+  .game-slide {
+    top: 100px;
+  }
 }

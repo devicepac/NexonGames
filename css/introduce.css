@@ -1,4 +1,5 @@
 .introduce {
+    display: block;
     padding: 250px 0 380px;
     background-image: url(/images/background.introduce.jpg);
     background-size: cover;
