@@ -1,8 +1,8 @@
-<div style="text-align: center;">
+<div align="center">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
 </div>
 
-<h1 align="center">넥슨게임즈 클론 코딩</h1>
+# <div align="center">넥슨게임즈 클론 코딩</div>
 
 <p align="center"><strong>넥슨 게임즈 클론 코딩</strong> 프로젝트입니다.</p> 
 <p align="center">이 프로젝트는 기존의 넥슨 게임즈 홈페이지 사이트를 참고하여 클론 코딩을 개발하였습니다.</p>
@@ -17,6 +17,6 @@
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white" alt="JavaScript" />
 </div>
 
-<div style="text-align: center;">
+<div align="center">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
 </div>
