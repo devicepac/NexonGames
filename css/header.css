@@ -225,24 +225,25 @@
 .mobile-gnb > li {
   height: 51px;
   cursor: pointer;
+  background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .mobile-gnb > li > a {
+  display: block;
   width: 100%;
-  height: 50px;
+  height: 51px;
   font-size: 16px;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 51px;
   color: #3c6189;
   padding: 0 15px;
-}
-.mobile-submenu {
 }
 .mobile-submenu > li {
   background: #eee;
 }
 .mobile-submenu > li > a {
+  display: block;
   width: 100%;
   height: 50px;
   font-size: 14px;

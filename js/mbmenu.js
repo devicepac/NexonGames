@@ -40,6 +40,7 @@ window.addEventListener("load", function () {
       anime({
         targets: item,
         height: 51,
+        background: "#fff",
         easing: "easeInOutQuad",
         duration: 300,
       });
@@ -67,6 +68,7 @@ window.addEventListener("load", function () {
         anime({
           targets: item,
           height: sideOpenHeightArray[_showNumber],
+          background: "#f3f3f3",
           easing: "easeInOutQuad",
           duration: 300,
         });

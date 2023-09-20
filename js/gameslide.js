@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
         timeArr[i] = time;
         });
         // 추후 비동기로 변경 필요
-        timeArr = [17, 19, 17, 24];
+        timeArr = [16, 19, 17, 24];
         // 모든 비디오를 먼저 멈춘다. (자동재생 금지);
         // 원하는 경우 재생한다.
         videos[i].currentTime = 0;
@@ -71,9 +71,9 @@ window.addEventListener("load", function () {
         }, timeArr[playIndex] * 1000);
     }
     // 프로그스바 만들기
-    // let bar = document.querySelector(".sw-bar-b");
-    // let barXscale = 0;
-    // bar.style.width = `${barXscale}%`;
+    let bar = document.querySelector(".sw-bar-b");
+    let barXscale = 0;
+    bar.style.width = `${barXscale}%`;
     // // 비디오 재생 시간 1초마다 barXscale 을 변화시킨다.
     // // 1번만 실행하고 종료하는 setTimeout 이 아니고.!!!
     // // 비디오 재생 시간 내내 1초마다 반복해서 함수를 실행한다.
@@ -85,7 +85,7 @@ window.addEventListener("load", function () {
         clearInterval(barTimer);
         barTimer = setInterval(function () {
             barXscale += 0.1;
-            // bar.style.width = `${barXscale}%`;
+            bar.style.width = `${barXscale}%`;
             if (barXscale >= 100) {
                 barXscale = 100;
             }

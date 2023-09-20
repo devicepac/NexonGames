@@ -1,4 +1,5 @@
-window.onload = function () {
+window.addEventListener("load", function () {
+
   // 위로 이동하기
   // .gotop 을 js에 저장하자.
   const goTop = document.querySelector(".fix-banner");
@@ -18,4 +19,4 @@ window.onload = function () {
   header.addEventListener("mouseleave", function () {
     header.classList.remove("header-active");
   });
-};
+});
