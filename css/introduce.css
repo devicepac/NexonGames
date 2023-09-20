@@ -1,127 +1,236 @@
 .introduce {
-    display: block;
-    padding: 250px 0 380px;
-    background-image: url(/images/background.introduce.jpg);
-    background-size: cover;
-    background-position: left center;
-    background-repeat: no-repeat;
+  display: block;
+  padding: 250px 0 380px;
+  background-image: url(/images/background.introduce.jpg);
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 .sw-introduce {
-    position: relative;
-    z-index: 99;
-    overflow: hidden;
+  position: relative;
+  z-index: 99;
+  overflow: hidden;
 }
 .intro-slide-down {
-    position: absolute;
-    top: 92%;
-    right: 3%;
-    z-index: 99;
+  position: absolute;
+  top: 92%;
+  right: 3%;
+  z-index: 99;
 }
 .swiper-slide {
-    padding: 0 0 15px;
+  padding: 0 0 15px;
 }
 .introduce-slide {
-    display: flex;
-    justify-content: center;
-    height: 429px;
-    gap: 0px 100px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 379px;
+  align-items: center;
 }
 
 .intro-slide-down {
-    position: absolute;
+  position: absolute;
 }
-.introduce h2 {
-    font-family: "NEXNON Lv2 Gothic bold";
-    font-size: 65px;
-    font-weight: 700;
-    padding: 0 0 10px;
-    text-align: left;
+.introduce-title {
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-size: 65px;
+  font-weight: 700;
+  padding: 0 0 10px;
+  text-align: left;
+  line-height: 65px;
 }
-.swiper-slide img{
-    width: 294.39px;
-    height: 331.01px;
+.introduce-img {
+  width: 294.39px;
+  height: 331.01px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduce-img img {
+  max-width: 100%;
 }
 .introduce-right {
-    width: 53%;
-    text-align: left;
+  width: 53%;
+  text-align: left;
 }
 .intro-interview {
-    display: block;
-    font-family: "NEXNON Lv2 Gothic bold";
-    font-weight: 400;
-    height: 45px;
-    font-size: 18px;
-    color: #cad401;
-    padding: 0 0 25px;
+  display: block;
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-weight: 400;
+  height: 45px;
+  font-size: 18px;
+  color: #cad401;
+  padding: 0 0 25px;
 }
 .introduce-right h2 {
-    display: block;
-    font-family: "NEXNON Lv2 Gothic bold";
-    font-weight: 700;
-    font-size: 45px;
-    padding: 0 0 65px;
-    height: 116px;
+  display: block;
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-weight: 700;
+  font-size: 45px;
+  padding: 0 0 65px;
 }
 .intro-team {
-    font-family: "NEXNON Lv2 Gothic";
-    font-weight: 400;
-    font-size: 18px;
-    color: #999999;
+  font-family: "NEXNON Lv2 Gothic";
+  font-weight: 400;
+  font-size: 18px;
+  color: #999999;
 }
 .introduce-right h3 {
-    position: relative;
-    font-family: "NEXNON Lv2 Gothic bold";
-    font-weight: 700;
-    font-size: 33px;
-    line-height: 40px;
-    margin: 0 0 20px;
-    padding: 0;
-    width: fit-content;
+  position: relative;
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 40px;
+  margin: 0 0 20px;
+  padding: 0;
+  width: fit-content;
 }
 .introduce-right h3::after {
-    position: absolute;
-    bottom: -2px;
-    left: 0px;
-    left: 2.5%;
-    content: "";
-    height: 50%;
-    width: 95%;
-    background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  left: 2.5%;
+  content: "";
+  height: 50%;
+  width: 95%;
+  background: rgba(0, 0, 0, 0.1);
 }
 .introduce-right p {
-    font-family: "NEXON Lv2 Gothic Light";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 29px;
-    color: #222222;
-    padding: 0 0 0 18px;
+  font-family: "NEXON Lv2 Gothic Light";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: #222222;
+  padding: 0 0 0 18px;
 }
 .sw-bt2 {
-    display: inline-block;
-    color: #222222;
-    font-family: "NEXNON Lv2 Gothic bold";
-    font-size: 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
+  display: inline-block;
+  color: #222222;
+  font-family: "NEXNON Lv2 Gothic bold";
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
-.sw-prev, .sw-next {
-    position: relative;
-    transition: transform 0.2s ease;
+.sw-prev,
+.sw-next {
+  position: relative;
+  transition: transform 0.2s ease;
 }
 
 .sw-prev:hover {
-    transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 .sw-next:hover {
-    transform: translateX(10px);
+  transform: translateX(10px);
 }
-.sw-wall{
-    display: inline-block;
-    width: 1px;
-    height: 10px;
-    margin: 0 15px;
-    background: #ddd;
+.sw-wall {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 15px;
+  background: #ddd;
+}
+/* 반응형 1280px */
+@media screen and (max-width: 1280px) {
+  .introduce > .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .introduce-title {
+    font-size: 5.5vw;
+    padding-bottom: 1vw;
+  }
+  .introduce-img {
+    padding-right: 0;
+    margin-right: 3vw;
+    width: calc(100% - 57vw);
+  }
+  .introduce-slide {
+    height: 616px;
+    gap: 0px 40px;
+    align-items: center;
+  }
+  .intro-interview {
+    font-size: 1.8vw;
+    padding-bottom: 2.5vw;
+  }
+  .introduce-right h2 {
+    font-size: 3.3vw;
+    padding-bottom: 5vw;
+  }
+  .introduce-right h3 {
+    font-size: 2.6vw;
+    margin-bottom: 2vw;
+  }
+  .introduce-right p {
+    padding-left: 1.8vw;
+    font-size: 1.4vw;
+  }
+}
+/* 반응형 1280px */
+@media screen and (max-width: 767px) {
+  .introduce-title {
+    font-size: 5.5vw;
+    padding-bottom: 1vw;
+  }
+  .introduce-slide {
+    height: 616px;
+    gap: 0px 40px;
+    align-items: center;
+  }
+  .intro-interview {
+    font-size: 1.8vw;
+    padding-bottom: 2.5vw;
+  }
+  .introduce-right h2 {
+    font-size: 3.3vw;
+    padding-bottom: 5vw;
+  }
+  .introduce-right h3 {
+    font-size: 2.6vw;
+    margin-bottom: 2vw;
+  }
+  .introduce-right p {
+    padding-left: 1.8vw;
+    font-size: 1.4vw;
+  }
+  .introduce-slide {
+    max-width: 710px;
+    flex-direction: column;
+    height: 980px;
+    margin-top: 50px;
+  }
+  .introduce-img {
+    width: calc(100% - 10vw);
+    height: auto;
+    padding-right: 0;
+  }
+  .introduce {
+    height: 1285px;
+    padding-top: 10vw;
+    padding-bottom: 16vw;
+  }
+  .introduce-right {
+    width: 100%;
+  }
+  .intro-interview {
+    font-size: 2.5vw;
+  }
+  .introduce-right h2 {
+    font-size: 4.3vw;
+  }
+  .intro-team {
+    font-size: 2.4vw;
+  }
+  .introduce-right h3 {
+    font-size: 3.6vw;
+  }
+  .introduce-right p {
+    font-size: 2.4vw;
+  }
+  .introduce-slide {
+    justify-content: initial;
+  }
 }
