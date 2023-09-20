@@ -104,6 +104,7 @@
     font-size: 20px;
     border: none;
     background: none;
+    cursor: pointer;
 }
 .sw-prev, .sw-next {
     position: relative;

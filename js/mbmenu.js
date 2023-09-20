@@ -11,6 +11,14 @@ window.addEventListener("load", function () {
   closeMenuButton.addEventListener("click", function () {
     mobileMenu.style.right = "-100%"; /* 메뉴를 오른쪽으로 숨김 */
   });
+  
+  window.addEventListener("resize", function () {
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    if (mobileMenu.style.right === "0px") {
+      mobileMenu.style.right = "-100%"; 
+    }
+  });
   // 모바일 아코디언 메뉴
   const sideLis = document.querySelectorAll(".mobile-gnb > li");
   const sideMenuA = document.querySelectorAll(".mobile-gnb > li > a");
