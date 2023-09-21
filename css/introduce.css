@@ -134,6 +134,9 @@
 }
 /* 반응형 1280px */
 @media screen and (max-width: 1280px) {
+  .introduce {
+    padding-bottom: 15vw;
+  }
   .introduce > .container {
     width: 100%;
     padding: 0 20px;
@@ -169,8 +172,13 @@
     font-size: 1.4vw;
   }
 }
-/* 반응형 1280px */
+/* 반응형 767px */
 @media screen and (max-width: 767px) {
+  .introduce {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    height: auto;
+  }
   .introduce-title {
     font-size: 5.5vw;
     padding-bottom: 1vw;
@@ -199,7 +207,7 @@
   .introduce-slide {
     max-width: 710px;
     flex-direction: column;
-    height: 980px;
+    height: 155vw;
     margin-top: 50px;
   }
   .introduce-img {
@@ -208,7 +216,6 @@
     padding-right: 0;
   }
   .introduce {
-    height: 1285px;
     padding-top: 10vw;
     padding-bottom: 16vw;
   }
@@ -230,7 +237,10 @@
   .introduce-right p {
     font-size: 2.4vw;
   }
-  .introduce-slide {
-    justify-content: initial;
+  .sw-introduce {
+    z-index: 99;
+  }
+  .sw-bt2 {
+    font-size: 2.5vw;
   }
 }

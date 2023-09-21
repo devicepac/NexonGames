@@ -2,12 +2,12 @@
   padding: 0 0 125px;
 }
 .careers > .container {
-  height: 760px;
+  height: 52vw;
 }
 .careers-header {
   position: relative;
   padding: 0 0 80px;
-  height: auto;
+  height: 13vw;
 }
 
 .careers-header h2 {
@@ -22,23 +22,25 @@
 
 .support {
   position: absolute;
-  right: 0;
-  bottom: 80px;
+  display: inline-block;
+  right: 0px;
+  top: 40px;
+  font-size: 24px;
+  z-index: 1;
   font-family: "NEXNON Lv2 Gothic bold";
   font-weight: 400;
-  font-size: 24px;
-  z-index: 99;
   transition: transform 0.2s ease;
 }
 
-.support::after {
+.support::before {
   position: absolute;
   bottom: 7px;
   left: 0;
   content: "";
-  height: 31%;
+  height: 35%;
   width: 72%;
-  background: rgba(0, 123, 255, 0.3);
+  background: #019fe8;
+  z-index: -1;
 }
 .support:hover {
   transform: translateX(10px);
@@ -54,11 +56,47 @@
   position: absolute;
   bottom: -20%;
   left: 0;
-  padding: 50px 65px 0 0;
+  padding: 4vw 5vw 0 0;
   text-align: left;
   font-family: "NEXNON Lv2 Gothic bold";
   font-weight: 400;
   font-size: 36px;
-  line-height: 43px;
+  line-height: 2.7vw;
   background: #ffffff;
+}
+@media screen and (max-width: 1345px) {
+  .careers > .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .careers-header h2 {
+    font-size: 5.5vw;
+    padding-bottom: 6vw;
+  }
+  .support {
+    font-size: 2vw;
+  }
+  .careers-text {
+    font-size: 2.6vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .careers-header h2 {
+    font-size: 5.5vw;
+    padding-bottom: 6vw;
+  }
+  .support {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .support {
+    font-size: 3vw;
+    top: 2vw;
+  }
+  .careers-text {
+    font-size: 3.2vw;
+    line-height: 3.5vw;
+  }
 }
