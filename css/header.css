@@ -66,12 +66,20 @@
   position: absolute;
   text-align: left;
   line-height: 35px;
-  color: #222222;
   height: 300px;
   margin-top: 10px;
 }
 .gnb-submenu li {
   width: 100px;
+}
+.gnb-submenu> li > a {
+  color: #666666;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.gnb-submenu > li > a:hover {
+  color: #222222;
 }
 /* //상단메뉴 */
 
